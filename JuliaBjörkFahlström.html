@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Verdana; ;font-size: 10px;
+      background-color: 
+    }
+	
+	p{
+      margin: 0;
+      font-family: impact	  ;font-size: 60px;
+		color: #FCC0FF
+    }
+	
+	h3{
+	font-weight: 100;
+	font-variant: small-caps;
+	color: #899BFF
+	}
+	
+	h2 {
+	font-weight: 100;
+	font-variant: small-caps;
+	color: #899BFF
+	}
+	
+	a:link /* Länkarna i menyn */
+	{
+    color: #899BFF;
+    text-decoration: none;
+	}
+	a:visited  /* Hur länkarna i menyn ser ut efter de är besökta*/
+	{
+    color: #899BFF;
+    text-decoration: none;
+	}
+	a:hover  /* Hur länkarna i menyn ser ut när musen pekar på dem*/
+	{
+    color: #D300FF;
+	}
+	a:active  /* Markerar vilken kategori i menyn som klickas på*/
+	{
+    text-decoration: none;
+	}
+
+
+    h1 {
+      margin: 0;
+      font-family: impact	  ;font-size: 80px;
+	  color: #FFFFFF;
+	  text-shadow: 5px 2px #FCC0FF;
+    }
+
+    header {
+	  height: 150px;
+		background-color: #cccccc;
+		background-image: linear-gradient(blue, white);
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .subheadings {
+      display: flex;
+      justify-content: center;
+    }
+
+    .subheading {
+      margin: 0 40px;
+    }
+
+	.container {
+	display: grid;
+	align-items: Center; 
+	grid-template-columns: 1fr 1fr;
+	column-gap:0px;
+	padding-right: 140px
+	}
+
+	img {
+	max-width: 75%;
+	max-height: 75%;
+	padding: 10px 50px 75px 140px
+	}	
+
+	.text {
+	font-size: 12px;
+	}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PORTFOLIO</h1><br><br>
+ 
+	<div class="subheadings">
+	  <h2 class="subheading"><a href="index.html"> Photo</a></h2>	
+      <h2 class="subheading"><a href="Art.html">Art</a></h2>
+      <h2 class="subheading"><a href="Juliabjörkfahlström.html"> Julia björk fahlström</a></h2>
+	</div>
+  </header>
+
+
+	<div class="container"> 
+	
+	<div class="image">
+	<img src="Julia.png" alt="Photo 1">
+	</div>
+	<div class="text">
+	<h3> I am a designer, photographer, and artist. 
+	Here I showcase my photographs and artworks. 
+	I am an explorer of different materials and techniques. 
+	I am still searching for who I am as a person and artist, and I let that show in my work. </h3> 
+	</div>
+</div>
+
+</body>
+</html>
