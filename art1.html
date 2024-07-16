@@ -39,9 +39,6 @@
 	}
 
 
-
-
-
     h1 {
       margin: 0;
       font-family: impact	  ;font-size: 80px;
@@ -66,35 +63,54 @@
     .subheading {
       margin: 0 40px;
     }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, fr));
-      gap: 150px;
-      padding: 50px;
-	  margin-bottom:80px;
-    }
-
-    .photo {
-      border: px solid #ccc;
-      padding: 0px;
-    }
-
-    .photo img {
-      width: 65%;
-      height: auto;
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-    }
-
-    .photo p {
-      margin: 10px 0 0;
-      font-size: 16px;
-      text-align: center;
-    }
 	
-	
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  width: 60%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:#001CB7;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-variant: small-caps;
+  padding: 30px 40px;
+}
+
 	footer {
   text-align: center;
   padding: 5px;
@@ -102,7 +118,7 @@
   color: #001CB7;
 	}
 
-
+	
 
   </style>
 </head>
@@ -117,39 +133,43 @@
 	</div>
   </header>
 
-  <section class="gallery">
-    <div class="photo">
-      <img src="Enfärgad.jpg" alt="Photo 1">
-      <p></p>
+ <div class="container">
+  <img src="Vipassana.jpg" alt="photo 1" class="image" style="width:100%">
+	<div class="middle">
+<div class="text">Vipassana - A lamp made of clay and sugar glass inspired by water</div>
+  </div>
     </div>
-    <div class="photo">
-      <img src="Talandefärger.jpg" alt="Photo 2">
-      <p></p>
+	    </div>
+    <div class="container">
+      <img src="Elfworld.png" alt="Photo 2" class="image" style="width:100%">
+	  <div class="middle">
+      <div class="text">Another World - Digital art made of my photos and with some help from AI</div>
     </div>
-	    <div class="photo">
-      <img src="Cars.png" alt="Photo 3">
-      <p></p>
+ </div>
+    <div class="container">
+      <img src="PIG.jpg" alt="Photo 2" class="image" style="width:100%">
+	  <div class="middle">
+      <div class="text">Run - Digital art made of my photos and with some help from AI</div>
     </div>
-	<div class="photo">
-      <img src="Orm.jpg" alt="Photo 4">
-      <p></p>
+ </div>
+    <div class="container">
+      <img src="Blend.png" alt="Photo 3"class="image" style="width:100%">
+	  <div class="middle">
+      <div class="text">B - Digital art made of my photos</div>
     </div>
-		    <div class="photo">
-      <img src="Humla.jpg" alt="Photo 5">
-      <p></p>
+	 </div>
+	    <div class="container">
+      <img src="Wind.jpg" alt="Photo 4"class="image" style="width:100%">
+	  <div class="middle">
+      <div class="text">One - acrylic painting </div>
     </div>
-	   <div class="photo">
-      <img src="Blåmes.jpg" alt="Photo 6">
-      <p></p>
-    </div>
+	 </div>
   </section>
-  
-  
+    
     <footer>
     <small>
       Copyright 2024 – All photos are ALL RIGHTS RESERVED and are owned by the photographer.
     </small>
   </footer>
-  
 </body>
 </html>
